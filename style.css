@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: taha;
+    src: url('./font/digital-7.ttf')
+}
+
+
+#timer {
+    font-family: taha !important;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: antiquewhite;
+    color: rgb(86, 108, 131); */
+}
+
+.a {
+    margin: 15px 50px;
+    /* background-color: rgb(139, 222, 252);
+    padding-bottom: 10px; */
+}
+.bt{
+
+    display: flex;
+    justify-content: end;
+    margin-right:  20px; 
+    /* margin-bottom: 20px; */
+
+}
