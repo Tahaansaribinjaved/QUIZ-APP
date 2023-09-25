@@ -69,81 +69,81 @@ var questions = [
         option3: '<a href="url" target="_blank">',
         correctOption: '<a href="url" target="_blank">'
     },
-    {
-        question: 'Which of these elements are all <table> elements?',
-        option1: '<table> <tr> <td>',
-        option2: '<table> <head> <tfoot>',
-        option3: '<table> <tr> <tt>',
-        correctOption: "<table> <tr> <td>"
-    },
-    {
-        question: 'Inline elements are normally displayed without starting a new line.',
-        option1: 'True',
-        option2: 'False',
-        correctOption: "True"
-    },
-    {
-        question: "How can you make a numbered list?",
-        option1: '<dl>',
-        option2: '<ul>',
-        option3: '<ol>',
-        option4: '<list>',
-        correctOption: "<ol>"
-    },
-    {
-        question: 'How can you make a bulleted list?',
-        option1: '<ol>',
-        option2: '<list>',
-        option3: '<ul>',
-        option4: '<dl>',
-        correctOption: "<ul>"
-    },
-    {
-        question: 'What is the correct HTML for inserting an image?',
-        option1: '<img alt="MyImage">image.gif</img>',
-        option2: '<img href="image.gif" alt="MyImage">',
-        option3: '<img src="image.gif" alt="MyImage">',
-        option4: '<image src="image.gif" alt="MyImage">',
-        correctOption: '<img src="image.gif" alt="MyImage">'
-    },
-    {
-        question: 'What is the correct HTML for making a checkbox?',
-        option1: '<iput type="check">',
-        option2: '<check>',
-        option3: '<checkbox>',
-        option4: '<input type="checkbox">',
-        correctOption: '<input type="checkbox">'
-    },
-    {
-        question: "What is the correct HTML for making a text input field?",
-        option1: '<input type="textfield">',
-        option2: '<input type="text">',
-        option3: '<textfield>',
-        option4: '<textinput type="textfield">',
-        correctOption: '<input type="text">'
-    },
-    {
-        question: 'What is the correct HTML for making a drop-down list?',
-        option1: '<input type="list">',
-        option2: '<list>',
-        option3: '<input type="dropdown">',
-        option4: '<select>',
-        correctOption: '<select>'
-    },
-    {
-        question: 'What is the correct HTML for making a text area?',
-        option1: '<input type="textbox">',
-        option2: '<input type="textarea">',
-        option3: '<textarea>',
-        correctOption: '<textarea>'
-    },
-    {
-        question: 'What is the correct HTML for inserting a background image?',
-        option1: '<background img="background.gif">',
-        option2: '<body bg="background.gif">',
-        option3: '<body style="background-image:url(background.gif)">',
-        correctOption: '<body style="background-image:url(background.gif)">'
-    }
+    // {
+    //     question: 'Which of these elements are all <table> elements?',
+    //     option1: '<table> <tr> <td>',
+    //     option2: '<table> <head> <tfoot>',
+    //     option3: '<table> <tr> <tt>',
+    //     correctOption: "<table> <tr> <td>"
+    // },
+    // {
+    //     question: 'Inline elements are normally displayed without starting a new line.',
+    //     option1: 'True',
+    //     option2: 'False',
+    //     correctOption: "True"
+    // },
+    // {
+    //     question: "How can you make a numbered list?",
+    //     option1: '<dl>',
+    //     option2: '<ul>',
+    //     option3: '<ol>',
+    //     option4: '<list>',
+    //     correctOption: "<ol>"
+    // },
+    // {
+    //     question: 'How can you make a bulleted list?',
+    //     option1: '<ol>',
+    //     option2: '<list>',
+    //     option3: '<ul>',
+    //     option4: '<dl>',
+    //     correctOption: "<ul>"
+    // },
+    // {
+    //     question: 'What is the correct HTML for inserting an image?',
+    //     option1: '<img alt="MyImage">image.gif</img>',
+    //     option2: '<img href="image.gif" alt="MyImage">',
+    //     option3: '<img src="image.gif" alt="MyImage">',
+    //     option4: '<image src="image.gif" alt="MyImage">',
+    //     correctOption: '<img src="image.gif" alt="MyImage">'
+    // },
+    // {
+    //     question: 'What is the correct HTML for making a checkbox?',
+    //     option1: '<iput type="check">',
+    //     option2: '<check>',
+    //     option3: '<checkbox>',
+    //     option4: '<input type="checkbox">',
+    //     correctOption: '<input type="checkbox">'
+    // },
+    // {
+    //     question: "What is the correct HTML for making a text input field?",
+    //     option1: '<input type="textfield">',
+    //     option2: '<input type="text">',
+    //     option3: '<textfield>',
+    //     option4: '<textinput type="textfield">',
+    //     correctOption: '<input type="text">'
+    // },
+    // {
+    //     question: 'What is the correct HTML for making a drop-down list?',
+    //     option1: '<input type="list">',
+    //     option2: '<list>',
+    //     option3: '<input type="dropdown">',
+    //     option4: '<select>',
+    //     correctOption: '<select>'
+    // },
+    // {
+    //     question: 'What is the correct HTML for making a text area?',
+    //     option1: '<input type="textbox">',
+    //     option2: '<input type="textarea">',
+    //     option3: '<textarea>',
+    //     correctOption: '<textarea>'
+    // },
+    // {
+    //     question: 'What is the correct HTML for inserting a background image?',
+    //     option1: '<background img="background.gif">',
+    //     option2: '<body bg="background.gif">',
+    //     option3: '<body style="background-image:url(background.gif)">',
+    //     correctOption: '<body style="background-image:url(background.gif)">'
+    // }
 ]
 
 var ques = document.getElementById('ques')
@@ -152,32 +152,32 @@ var opt2 = document.getElementById('opt2')
 var opt3 = document.getElementById('opt3')
 var index = 0
 var btn = document.getElementById('btn')
-var score = 0 ;
-var min = 1 
+var score = 0;
+var min = 1
 var sec = 59
 var timer = document.getElementById('timer')
-var interval = setInterval(function(){
+var interval = setInterval(function () {
     timer.innerText = `${min} :${sec} `
     sec--
-    if(sec<0){
+    if (sec < 0) {
         min--
-        sec = 59 
+        sec = 59
     }
-    if(min<0){
+    if (min < 0) {
         min = 1
         sec = 59
         nextQues()
     }
-},1000)
-function nextQues(){
+}, 1000)
+function nextQues() {
     var getOptions = document.getElementsByName('options')
-    for(var i = 0 ; i < getOptions.length ; i++){
-        if(getOptions[i].checked){
+    for (var i = 0; i < getOptions.length; i++) {
+        if (getOptions[i].checked) {
             var selectedValue = getOptions[i].value
-              var selectedQues = questions[index -1]['question']
-            var selectedAnswer = questions[index -1][`option${selectedValue}`]
-            var correctOption = questions[index -1][`correctOption`]
-            if(selectedAnswer == correctOption){
+            var selectedQues = questions[index - 1]['question']
+            var selectedAnswer = questions[index - 1][`option${selectedValue}`]
+            var correctOption = questions[index - 1][`correctOption`]
+            if (selectedAnswer == correctOption) {
                 score++
             }
 
@@ -187,23 +187,46 @@ function nextQues(){
     }
     btn.disabled = true
 
+    var percentage = (score / questions.length) * 100
 
-    if(index > questions.length -1){
-        alert('your percentage  '+((score/questions.length)*100).toFixed(2))
+    if (index > questions.length - 1) {
+        console.log(percentage)
+        if (percentage > 40) {
+
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Wellcome !',
+                text: ' your percentage is ' + percentage,
+            })
+            // location.href = ''
+        }
+        else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'sorry you are failed  your persentage is '+percentage,
+                footer: '<a href="index.html">PLEASE TRY AGAIN</a>'
+              })
+              
+            // document.write('<a href="index.html">'+'Plese try again'+'</a>')
+            // location.href = 'index.html'
+        }
+
     }
-    else{
+    else {
         ques.innerText = questions[index].question
-        opt1.innerText= questions[index].option1
-        opt2.innerText= questions[index].option2
-        opt3.innerText= questions[index].option3
+        opt1.innerText = questions[index].option1
+        opt2.innerText = questions[index].option2
+        opt3.innerText = questions[index].option3
         index++
 
-        
+
     }
-    min = 1 
+    min = 1
     sec = 59
 }
 nextQues()
-function clicked(){
+function clicked() {
     btn.disabled = false
 }
